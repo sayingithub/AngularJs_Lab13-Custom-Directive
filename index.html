@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html ng-app="angularApp">
+<head lang="en" >
+    <meta charset="UTF-8">
+    <title></title>
+
+    <!-- load bootstrap and fontawesome via CDN -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+    <style>
+        html, body
+        {
+            font-size: 1.1em;
+        }
+    </style>
+
+    <!-- load angular via CDN -->
+    <script src="//code.angularjs.org/1.3.0-rc.1/angular.min.js"></script>
+
+    <!-- Included angular messages services -->
+
+    <script src="//code.angularjs.org/1.3.0-rc.1/angular-messages.min.js"></script>
+
+    <!-- Included for developing the Single Page Application  for Routing -->
+    <script src="//code.angularjs.org/1.3.0-rc.1/angular-route.min.js"></script>
+
+
+
+    <script src="app-lab13.js"></script>
+
+
+</head>
+
+<header>
+    <div class="navbar-header">
+        <a class="navbar-brand" href="/">AngularJS</a>
+    </div>
+
+    <ul class="nav navbar-nav navbar-right">
+        <li><a href="#/main"><i class="fa fa-home"></i>Home</a></li>
+        <li><a href="#/second"><i></i>Second</a></li>
+        <li><a href="#/third/4"><i></i>Third</a></li>
+    </ul>
+
+</header>
+
+
+
+<body>
+
+<div class="container">
+
+     <p>
+         This is the Index Page for the Single Page Application!! From here we will navigate to other pages without page reload/refresh which happens in background.
+     </p>
+
+    <!-- ng-view is required to display the single pages based on the hash tag-->
+     <div ng-view></div>
+</div>
+
+
+</body>
+</html>
